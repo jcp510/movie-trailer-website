@@ -1,11 +1,19 @@
 import webbrowser
 
+
 # Data structure to store favorite movies.
 class Movie:
-    """"Class definition for creating instances of favorite movies."""
+    """"Store favorite movies, include title, storyline, box art, and trailer.
+
+        Attributes:
+            title (str): movie title.
+            storyline (str): movie plot.
+            poster_image_url (str): url for movie box art.
+            trailer_youtube_url (str): url for movie trailer.
+    """
+
     def __init__(self, movie_title, movie_storyline, poster_image,
                  trailer_youtube):
-
         self.title = movie_title
         self.storyline = movie_storyline
         self.poster_image_url = poster_image
